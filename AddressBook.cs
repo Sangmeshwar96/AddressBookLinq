@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace AddressBook_Linq
+namespace AddressBookLINQ
 {
-    class AddressBook
+    public class AddressBookDataTable
     {
-        DataTable table = new DataTable("AddressBook");
-        public AddressBook()
-        {
 
+        DataTable table = new DataTable("AddressBook");
+
+
+        public AddressBookDataTable()
+        {
             table.Columns.Add("FirstName", typeof(string));
             table.Columns.Add("LastName", typeof(string));
             table.Columns.Add("Address", typeof(string));
